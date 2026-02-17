@@ -2,7 +2,7 @@ import { Project } from "./projects-data";
 
 export const personalInfo = {
     name: "Subrata Banerjee",
-    role: "MERN Stack Developer",
+    role: "Software Developer",
     headline: "MCA’26 @MSIT | MERN Stack Development | Python, Java | Problem-Solving",
     about: `I am currently pursuing a Master of Computer Applications (MCA) in my final year at Meghnad Saha Institute of Technology. I hold a Bachelor's degree in Computer Applications (BCA) from Swami Vivekanand Institute of Modern Science.
 

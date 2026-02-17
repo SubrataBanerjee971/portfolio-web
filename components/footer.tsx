@@ -10,9 +10,9 @@ export function Footer() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: false }}
-      className="py-16 px-6 border-t border-border"
+      className="py-16 border-t border-border overflow-hidden"
     >
-      <div className="mx-auto max-w-5xl flex flex-col items-center gap-6">
+      <div className="mx-auto max-w-5xl flex items-center justify-center gap-6 px-6 mb-8">
         <div className="flex items-center gap-6">
           <a
             href="https://github.com"
@@ -49,9 +49,19 @@ export function Footer() {
             <Mail className="h-5 w-5" />
           </a>
         </div>
-        <p className="text-sm text-muted-foreground text-center">
+      </div>
+      <div className="w-full overflow-hidden py-5">
+        <motion.p
+          animate={{ x: ["100vw", "-100vw"] }}
+          transition={{
+            repeat: Infinity,
+            duration: 30,
+            ease: "linear",
+          }}
+          className="text-7xl md:text-9xl font-bold text-muted-foreground/20 whitespace-nowrap"
+        >
           {"#Designed & Built with care."}
-        </p>
+        </motion.p>
       </div>
     </motion.footer>
   )
